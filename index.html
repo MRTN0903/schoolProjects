@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Brand | Official Store</title>
+    <meta name="description"
+          content="Discover our latest product and order yours today.">
+
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#" class="logo">YOUR BRAND.</a>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#order">Order</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <span class="eyebrow">INTRODUCING OUR PRODUCT</span>
+
+                <h1>A better way to do what you love.</h1>
+
+                <p>
+                    Meet your new favorite product. Thoughtfully designed,
+                    made with quality in mind, and ready for you.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#order" class="btn btn-primary">
+                        Order yours
+                    </a>
+                    <a href="#features" class="btn btn-secondary">
+                        Discover more
+                    </a>
+                </div>
+
+                <p class="trust-text">
+                    Quality you can trust. Service you can count on.
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <img
+                    src="./assets/images/vase.jpg"
+                    alt="Our featured product"
+                >
+            </div>
+        </section>
+
+        <!-- Features section -->
+        <section class="features section" id="features">
+            <div class="section-heading">
+                <span class="eyebrow">THE DIFFERENCE</span>
+                <h2>Designed with you in mind.</h2>
+                <p>
+                    Tell your customers what makes your product special.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <span class="feature-icon">✦</span>
+                    <h3>Premium quality</h3>
+                    <p>
+                        Highlight the materials, craftsmanship,
+                        or quality of your product.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-icon">♡</span>
+                    <h3>Made for everyday life</h3>
+                    <p>
+                        Explain how your product solves a problem
+                        or makes life easier.
+                    </p>
+                </article>
+
+                <article class="feature-card">
+                    <span class="feature-icon">✓</span>
+                    <h3>Worth every penny</h3>
+                    <p>
+                        Show customers the real value they receive
+                        when choosing your product.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Order section -->
+        <section class="order-section section" id="order">
+            <div class="order-info">
+                <span class="eyebrow">MAKE IT YOURS</span>
+                <h2>Ready to get yours?</h2>
+
+                <p>
+                    Place your order below. Fill in your details
+                    and we'll take it from there.
+                </p>
+
+                <div class="product-summary">
+                    <img
+                        src="./assets/images/vase.jpg"
+                        alt="Product preview"
+                    >
+
+                    <div>
+                        <h3>Your Product Name</h3>
+                        <p>Short product description</p>
+                        <span class="price">€39.00</span>
+                    </div>
+                </div>
+
+                <ul class="benefits">
+                    <li>✓ Quality product</li>
+                    <li>✓ Helpful customer support</li>
+                    <li>✓ Clear order information</li>
+                </ul>
+            </div>
+
+            <form class="order-form" action="#" method="post">
+                <h3>Place your order</h3>
+                <p class="form-description">
+                    Enter your details below.
+                </p>
+
+                <label for="name">Full name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your full name"
+                    autocomplete="name"
+                    required
+                >
+
+                <label for="email">Email address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                >
+
+                <label for="quantity">Quantity</label>
+                <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                    max="99"
+                    value="1"
+                    required
+                >
+
+                <label for="address">Shipping address</label>
+                <textarea
+                    id="address"
+                    name="address"
+                    placeholder="Street, city, postal code, country"
+                    autocomplete="street-address"
+                    rows="3"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn btn-primary order-btn">
+                    Submit order
+                </button>
+
+                <p class="form-note">
+                    Your order details will be handled securely.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#" class="logo">YOUR BRAND.</a>
+
+        <p>Not an official website. This is for educational purposes only.</p>
+
+        <div>
+            <a href="mailto:hello@example.com">Contact</a>
+            <a href="#">Privacy policy</a>
+        </div>
+    </footer>
+
+</body>
+</html>
