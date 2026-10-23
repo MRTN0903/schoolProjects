@@ -1,0 +1,289 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6fb;
+    color: #1b263b;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #101b35;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #76a0ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #76a0ff;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(120deg, #101b35, #2459d3);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.hero .tag {
+    display: inline-block;
+    border: 1px solid #91b0ff;
+    border-radius: 20px;
+    padding: 5px 14px;
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    color: #e0e8fa;
+}
+
+/* Main content */
+main {
+    max-width: 1250px;
+    margin: auto;
+    padding: 50px 24px 70px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+}
+
+.section-heading p {
+    color: #68758a;
+}
+
+.squad-count {
+    background-color: #e1eaff;
+    color: #2048a3;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Responsive grid */
+.squad-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Player cards */
+.player-card {
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(16, 27, 53, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.player-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(16, 27, 53, 0.15);
+}
+
+.player-photo {
+    position: relative;
+    background-color: #e2e9f5;
+}
+
+.player-photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 4.2;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+.jersey {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #2459d3;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.player-info {
+    padding: 18px;
+}
+
+.position {
+    color: #2459d3;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.player-info h3 {
+    font-size: 18px;
+    margin: 5px 0 12px;
+}
+
+.details {
+    border-top: 1px solid #edf0f5;
+    padding-top: 10px;
+}
+
+.detail,
+.details p {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 13px;
+}
+
+.details p span {
+    color: #68758a;
+}
+
+.details p strong {
+    font-weight: bold;
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    background-color: #101b35;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer p {
+    color: #d1d9e9;
+    font-size: 13px;
+    margin: 5px 0;
+}
+
+footer .disclaimer {
+    max-width: 800px;
+    margin: 12px auto 0;
+    color: #b8c5df;
+}
+
+/* Tablet: 3 columns */
+@media (max-width: 1000px) {
+    .squad-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+}
+
+/* Mobile and small tablets: 2 columns */
+@media (max-width: 700px) {
+    header {
+        padding: 18px 5%;
+    }
+
+    .squad-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    main {
+        padding: 35px 16px 50px;
+    }
+
+    .hero {
+        padding: 45px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .player-info {
+        padding: 13px;
+    }
+
+    .player-info h3 {
+        font-size: 16px;
+    }
+
+    .details p {
+        font-size: 12px;
+    }
+
+    nav a {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+}
+
+/* Small mobile: 1 column */
+@media (max-width: 420px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .squad-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .player-card {
+        width: 100%;
+        max-width: 340px;
+        margin: auto;
+    }
+
+    .player-photo img {
+        aspect-ratio: 4 / 3.5;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+}
